@@ -3,7 +3,7 @@ const querystring = require('querystring');
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/studentdb', {
+mongoose.connect('http://cluster.rugql.mongodb.net/?retryWrites=true&w=majority&appName=Cluster', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
